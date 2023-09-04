@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oops_Concept
 {
-    //Multi-level Inheritance
+    //hierarchical Inheritance
     class Animal
     {
           public void Eat()
@@ -16,19 +16,27 @@ namespace Oops_Concept
 
     }
     
-    class Dog:Animal 
+    class bird:Animal 
     { 
-        public void bark()
+        public void fly()
         {
-            Console.WriteLine("Dog is barking");
+            Console.WriteLine("Bird is flying");
         }
     }
 
-    class Horse: Dog
+    class Eagle: Animal
     {
-        public void run()
+        public void Hunt()
         {
-            Console.WriteLine("Horse is running");
+            Console.WriteLine("Eagle is Hunting");
+        }
+    }
+
+    class Penguin: Animal
+    {
+        public void swim()
+        {
+            Console.WriteLine("Penguin are swim");
         }
     }
 

@@ -4,12 +4,14 @@
     {
         static void Main(string[] args)
         {
-            Horse horse = new Horse();
-            horse.Eat();
-            Console.WriteLine("--------------");
-            horse.bark();
-            Console.WriteLine("--------------");
-            horse.run();
+            Penguin penguin = new Penguin();
+            penguin.Eat();
+            penguin.swim();
+
+            Console.WriteLine("-------------------");
+            Eagle eagle = new Eagle();
+            eagle.Eat();
+            eagle.Hunt();
         }
     }
 }
