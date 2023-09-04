@@ -4,10 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Dog dog = new Dog();
-            dog.Eat();
+            Horse horse = new Horse();
+            horse.Eat();
             Console.WriteLine("--------------");
-            dog.bark();
+            horse.bark();
+            Console.WriteLine("--------------");
+            horse.run();
         }
     }
 }
