@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Oops_Concept
 {
-    //Method Overloading
+    //Method Overriding
     class A
     {
         public virtual void show()
