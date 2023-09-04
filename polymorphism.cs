@@ -7,23 +7,20 @@ using System.Threading.Tasks;
 namespace Oops_Concept
 {
     //Method Overloading
-    class Polymorphism
+    class A
     {
-        int a = 20, b = 30, c = 0;
-        public void add()
+        public virtual void show()
         {
-            c = a + b;
-            Console.WriteLine(c);
+            Console.WriteLine("Class A");
         }
-       public void add(int a, int b)
+    }
+
+    class B : A
+    {
+        public override void show()
         {
-            c = a + b;
-            Console.WriteLine(c);
-        }
-        public void add(float a, float b, float c)
-        {
-            c = a + b + c;
-            Console.WriteLine(c);
+            base.show();
+            Console.WriteLine("Class B");
         }
     }
 }
