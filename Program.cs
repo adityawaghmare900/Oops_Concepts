@@ -4,9 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Mul_Inheritance mul_inheritance=new Mul_Inheritance();
-            mul_inheritance.Method1();
-            mul_inheritance.Method2();
+            Polymorphism polymorphism = new Polymorphism();
+            polymorphism.add();
+            Console.WriteLine("-----------------------");
+            polymorphism.add(50, 63);
+            Console.WriteLine("-----------------------");
+            polymorphism.add(5.3f, 8.3f, 2.9f);
         }
     }
 }
