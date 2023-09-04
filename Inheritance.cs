@@ -6,38 +6,28 @@ using System.Threading.Tasks;
 
 namespace Oops_Concept
 {
-    //hierarchical Inheritance
-    class Animal
+    //Multiple Inheritance
+    interface A1
     {
-          public void Eat()
+        public void Method1();
+    }
+    interface A2
+    {
+        public void Method2();
+    } 
+    
+    class Mul_Inheritance : A1, A2
+    {
+        public void Method1()
         {
-            Console.WriteLine("Animal is eating");
+            Console.WriteLine("Method 1 is called");
         }
 
+        public void Method2()
+        {
+            Console.WriteLine("Method 2 is called");
+        }
     }
     
-    class bird:Animal 
-    { 
-        public void fly()
-        {
-            Console.WriteLine("Bird is flying");
-        }
-    }
-
-    class Eagle: Animal
-    {
-        public void Hunt()
-        {
-            Console.WriteLine("Eagle is Hunting");
-        }
-    }
-
-    class Penguin: Animal
-    {
-        public void swim()
-        {
-            Console.WriteLine("Penguin are swim");
-        }
-    }
 
 }
