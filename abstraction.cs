@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Abstraction
 {
+    //abstract class
     abstract class Animal
     {
         public abstract void Dog();
