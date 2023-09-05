@@ -1,13 +1,14 @@
-﻿using System.Runtime.InteropServices;
-
-namespace Oops_Concept
+﻿namespace Abstraction
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-           B b=new B();
-            b.show();
+           Barking barking = new Barking();
+            barking.cow();
+            barking.Dog();  
+
         }
     }
 }
+ 
